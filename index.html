@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacaophile - Bienvenido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cacaophile</h1>
+        <div class="action-buttons">
+            <button onclick="toggleCart()">🛒</button>
+            <button onclick="toggleHistory()">📖</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Bienvenido, amante del chocolate</h2>
+        <p>
+            Gracias por iniciar sesión en nuestra chocolatería. Aquí puedes explorar nuestras deliciosas creaciones de chocolate artesanal,
+            hechas con ingredientes naturales. ¡Esperamos que disfrutes de nuestra selección de chocolates
+            como nunca antes!
+        </p>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/6954/6954015.png" alt="Chocolate Icono">
+    </div>
+
+    <div class="container">
+        <h2>Nuestros Productos</h2>
+        <div id="product-container" class="image-gallery">
+            <!-- Los productos se insertarán dinámicamente aquí desde JavaScript -->
+        </div>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div id="cart-dropdown" class="cart-dropdown">
+        <h3>Carrito de Compras</h3>
+        <div id="cart-items" class="cart-items"></div>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="purchase-button" onclick="completePurchase()" style="display:none;">Realizar Compra</button>
+    </div>
+
+    <!-- Historial de compras -->
+    <div id="history-dropdown" class="history-dropdown">
+        <h3>Historial de Compras</h3>
+        <div id="purchase-history"></div>
+    </div>
+
+    <footer>
+        &copy; 2024 Cacaophile. Todos los derechos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

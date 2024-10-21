@@ -1,0 +1,152 @@
+/* Estilo general */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8e6d1; /* Color de fondo cálido */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    background-color: #4b2e17; /* Color marrón chocolate */
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Botones de acción (Carrito e Historial) */
+.action-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.action-buttons button {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #b85c1b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Galería de productos */
+.image-gallery {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.image-gallery img {
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Botones para agregar al carrito */
+.image-item button {
+    background-color: #2a9d8f; /* Verde suave */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-item button:hover {
+    background-color: #1f7a6a; /* Verde oscuro */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Carrito y Historial (Desplegables) */
+.cart-dropdown, .history-dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.cart-dropdown h3, .history-dropdown h3 {
+    color: #4b2e17;
+    margin-top: 0;
+}
+
+.cart-items, #purchase-history {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.cart-total {
+    font-weight: bold;
+    color: #d2691e;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color: #4b2e17;
+    color: white;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
