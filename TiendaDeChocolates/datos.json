@@ -1,0 +1,23 @@
+[
+    {
+        "usuario": "user1",
+        "clave": "password1",
+        "correo": "user1@example.com"
+    },
+    {
+        "usuario": "user2",
+        "clave": "password2",
+        "correo": "user2@example.com"
+    },
+    {
+        "usuario": "user3",
+        "clave": "password3",
+        "correo": "user3@example.com"
+    }
+
+    {
+        "usuario":"user4",
+        "clave":"password4",
+        "correo":"user1@example.com"
+    }
+]
