@@ -1,2 +1,0 @@
-INSERT INTO usuarios (nombre, usuario, clave, correo)
-VALUES ('Maria Lopez', 'mlopez', 'clave12345', 'mlopez@example.com');
